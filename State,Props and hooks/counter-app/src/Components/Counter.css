@@ -1,0 +1,27 @@
+.show-count{
+    margin-top: 6rem;
+}
+
+
+
+.btn1{
+    border: none;
+    background-color:green;
+    padding: .3rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+.btn2{
+    border: none;
+    background-color: darkorange;
+    padding: .3rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+.btn3{
+    border: none;
+    background-color: yellow;
+    padding: .4rem;
+    margin: .5rem;
+    cursor: pointer;
+}
