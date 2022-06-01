@@ -14,11 +14,11 @@ setTodos([...todos, { id: Date.now(), value: el }]);
   let newTodo =  todos.filter(el=> el.id !== id)
   setTodos(newTodo);
   };
-
+//Note-addTodo ek method hai props object ka. 
   return (
     <>
-      <TodoInput addTodo={addTodo} />
-      <Todolist todos={todos} key={todos.id} deleteTodo={deleteTodo} />
+      <TodoInput addTodos={addTodo} /> 
+      <Todolist todos={todos}  deleteTodo={deleteTodo} />
     </>
   );
 };

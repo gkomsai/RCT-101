@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { VscAdd } from "react-icons/vsc";
 import "./Todoinput.css";
 
-const TodoInput = ({ addTodo }) => {
+const TodoInput = ({ addTodos }) => {
   const [value, setValue] = useState("");
+  
   const handleChange = (e) => {
    
     setValue(e.target.value);
@@ -24,7 +25,7 @@ const TodoInput = ({ addTodo }) => {
           </div>
           <button className="plus" disabled={!value} onClick={(e)=>{
              console.log(value);
-            addTodo(value);
+            addTodos(value); //yaha se us key me value ko pass kar rahe hain jo ki Todo app me addTodos me ja rahi rahi hai.
             setValue("");
           }}>
             <VscAdd title="addTodo" />
